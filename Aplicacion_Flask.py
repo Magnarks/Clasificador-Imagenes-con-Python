@@ -16,6 +16,8 @@ import skimage.feature
 import skimage.io
 
 App= Flask(__name__, template_folder="Plantillas")
+PORT=5000
+DEBUG=True
 BASE_PATH= os.getcwd()
 UPLOAD_PATH= os.path.join(BASE_PATH, "static", "subidas")
 MODEL_PATH= os.path.join(BASE_PATH, "static", "models")

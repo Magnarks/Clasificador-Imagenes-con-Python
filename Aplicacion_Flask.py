@@ -108,4 +108,4 @@ def pipeline_model(path, Escalador_transform, Modelo_sgd):
     return Top_dict
 
 if __name__ == "__main__":
-    App.run(debug=False) #debug cuando estamos probando la paguina no usar en produccion solo desarrollo
+    App.run(debug=False, port=5000) #debug cuando estamos probando la paguina no usar en produccion solo desarrollo

@@ -1,1 +1,1 @@
-web: python Aplicacion_Flask.py
+web: python Aplicacion_Flask.py runserver 0.0.0.0:5000

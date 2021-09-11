@@ -1,0 +1,84 @@
+{% extends "Inicio.html" %}
+{% block body %}
+    <div class="container" id="myrow">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" id="uploadimage" aria-current="page" href="#upload-image">Actualizar Imágen</a>
+            </li>
+          </ul>
+          <!--tab panes-->
+          <div class="container">
+              <div class="tab-pane active" id="upload-image" role="tabpanel" aria-labelledby="uploadimage">
+                  <div class="row">
+                    <div class="col">
+                        <form action="#" method="POST" enctype="multipart/form-data">
+                            <!--file input-->
+                            <p>
+                                <input type="file" name="image_name" class="btn" required style="background-color: #ffffff;">
+                            </p>
+                            <!--submit button-->
+                            <p>
+                                <input type="submit" value="Enviar" class="btn" style="background-color: #ffffff;">
+                            </p>
+                            <p align="center" style="color: aliceblue;"> <strong>Instrucciones:</strong> <br>
+                                Solo sube imágenes con extensión png, jpg, jpeg. <br>
+                                <strong>El Modelo no es 100% perfecto, puede fallar</strong> 
+                            </p>
+                        </form>
+                    </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+<br>
+{% if fileupload %} 
+<div class="container" id="myrow_result">
+    <div class="row">
+        <div class="col col-8">
+            <table>
+                <tr>
+                    <th>Etiqueta</th>     
+                    <th>Puntuación</th>
+                </tr>
+                {% for name,score in data.items() %}
+                    <tr>
+                        <td>{{ name }}</td>
+                        <td>{{ score }}</td>
+                    </tr>          
+                {% endfor %}
+            </table>
+        </div>
+        <div class="col col-4">
+            <img src="/static/subidas/{{ image_filename }}" alt="uploaded image" width="300" height="{{ height }}">
+
+        </div>
+    </div>
+</div>
+{% endif %}
+{% if extension %}
+    <div class="container" id="myrow_result">
+        <div class="row">
+            <p>Extensión Invalida de imágen</p>
+            <p>Asegurate que la extensión sea .png .jpg o .jpeg</p>
+        </div>
+    </div>
+{% endif %} 
+<style>
+    #myrow{
+        background: linear-gradient(90deg, #525252 0%, #3d72b4 100%);
+    }
+    #myrow_result{
+        background: linear-gradient(90deg, #525252 0%, #3d72b4 100%);
+        color: #ffffff;
+        padding: 5%;
+        align-content: center;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, td, th{
+        border: 1px solid black;
+    }
+</style>
+{% endblock %}

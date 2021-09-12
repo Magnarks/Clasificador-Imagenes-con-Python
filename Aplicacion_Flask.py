@@ -15,7 +15,7 @@ import skimage.transform
 import skimage.feature
 import skimage.io
 
-App= Flask(__name__, template_folder="Plantillas")
+app= Flask(__name__, template_folder="Plantillas")
 BASE_PATH= os.getcwd()
 UPLOAD_PATH= os.path.join(BASE_PATH, "static", "subidas")
 MODEL_PATH= os.path.join(BASE_PATH, "static", "models")
@@ -25,22 +25,22 @@ scaler_path= os.path.join(MODEL_PATH, "Escalar.pickle")
 model_sgd= pickle.load(open(model_sgd_path, "rb"))
 scaler= pickle.load(open(scaler_path, "rb"))
 
-@App.errorhandler(404)
+@app.errorhandler(404)
 def error404(error):
     mensaje= "Ah Ocurrido Un Error 404. Pagina no encontrada. Por Favor regresa al sitio de inicio e intenta de nuevo"
     return render_template("Error.html", message=mensaje) #Pagina no Encontrada
 
-@App.errorhandler(405)
+@app.errorhandler(405)
 def error405(error):
     mensaje= "Error 405. Metodo no encontrado"
     return render_template("Error.html", message=mensaje)
 
-@App.errorhandler(500)
+@app.errorhandler(500)
 def error500(error):
     mensaje= "Error Interno 500. Error ocurrido en el programa"
     return render_template("Error.html", message=mensaje)
 
-@App.route("/", methods=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 def inicio():
     if request.method== "POST":
         subir_archivo= request.files["image_name"]
@@ -65,7 +65,7 @@ def inicio():
     else:
         return render_template("Subir.html", extension=False, fileupload=False)
 
-@App.route("/acerca/")
+@app.route("/acerca/")
 def acerca():
     return render_template("Acerca.html")
 
@@ -108,4 +108,4 @@ def pipeline_model(path, Escalador_transform, Modelo_sgd):
     return Top_dict
 
 if __name__ == "__main__":
-    App.run(debug=False, port=5000) #debug cuando estamos probando la paguina no usar en produccion solo desarrollo
+    app.run(debug=False, port=5000) #debug cuando estamos probando la paguina no usar en produccion solo desarrollo

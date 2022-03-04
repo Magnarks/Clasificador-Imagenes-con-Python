@@ -8,7 +8,7 @@ En este repositorio se encuentran los modelos entrenados y el archivo .py de la 
 
 Aqui unas imagenes demostrativas:
 
-![Image text](https://raw.githubusercontent.com/Magnarks/Clasificador-Imagenes-con-Python/master/Imagenes/WhatsAppImage2021-09-08at9.54.44 PM.jpeg)
+![Image text](https://raw.githubusercontent.com/Magnarks/Clasificador-Imagenes-con-Python/master/Imagenes/WhatsApp-Image2021-09-08at9.54.44-PM.jpeg)
 ![Image text](https://raw.githubusercontent.com/Magnarks/Clasificador-Imagenes-con-Python/master/Imagenes/WhatsApp Image 2021-09-08 at 9.56.57 PM.jpeg)
 ![Image text](https://raw.githubusercontent.com/Magnarks/Clasificador-Imagenes-con-Python/master/Imagenes/WhatsApp Image 2021-09-08 at 10.03.12 PM (1).jpeg)
 ![Image text](https://raw.githubusercontent.com/Magnarks/Clasificador-Imagenes-con-Python/master/Imagenes/WhatsApp Image 2021-09-08 at 10.03.12 PM.jpeg)

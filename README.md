@@ -10,6 +10,6 @@ Aqui unas imagenes demostrativas:
 
 ![Image text](https://raw.githubusercontent.com/Magnarks/Clasificador-Imagenes-con-Python/master/Imagenes/WhatsApp-Image2021-09-08at9.54.44-PM.jpeg)
 ![Image text](https://raw.githubusercontent.com/Magnarks/Clasificador-Imagenes-con-Python/master/Imagenes/WhatsApp Image 2021-09-08 at 9.56.57 PM.jpeg)
-![Image text](https://raw.githubusercontent.com/Magnarks/Clasificador-Imagenes-con-Python/master/Imagenes/WhatsApp Image 2021-09-08 at 10.03.12 PM (1).jpeg)
+![Image text](https://raw.githubusercontent.com/Magnarks/Clasificador-Imagenes-con-Python/master/Imagenes/WhatsApp%20Image%202021-09-08%20at%2010.03.12%20PM%20(1).jpeg)
 ![Image text](https://raw.githubusercontent.com/Magnarks/Clasificador-Imagenes-con-Python/master/Imagenes/WhatsApp Image 2021-09-08 at 10.03.12 PM.jpeg)
 ![Image text](https://raw.githubusercontent.com/Magnarks/Clasificador-Imagenes-con-Python/master/Imagenes/WhatsApp Image 2021-09-12 at 7.40.24 PM.jpeg)

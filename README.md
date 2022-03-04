@@ -1,8 +1,7 @@
 # Clasificador-Imagenes-con-Python
 Clasificador de imagenes usando Machine-Learning, creado con Python, usando la libreria de sklearn, skimage, numpy, pandas y matplotlib
 
-[!Imagen de la app web en Flask, con la imagen de mi gato]
-https://raw.githubusercontent.com/Magnarks/Clasificador-Imagenes-con-Python/master/Imagenes/TobeyRaton.png
+[!Image text]https://raw.githubusercontent.com/Magnarks/Clasificador-Imagenes-con-Python/master/Imagenes/TobeyRaton.png
 
 
 En este repositorio se encuentran los modelos entrenados y el archivo .py de la aplicación python en flask
